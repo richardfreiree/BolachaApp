@@ -5,23 +5,37 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232"
     tools:context=".SplashActivity">
 
     <ImageView
+    android:layout_centerInParent="true"
         android:id="@+id/logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/logo" />
 
     <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
         android:text="Bolachê"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#ffff"
+        />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
         android:id="@+id/pgSplash"
-        android:layout_width="250dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:indeterminate="true" />
+        android:layout_below="@id/text1"
+        android:indeterminate="true"
+        app:indicatorColor="#232"
+
+        />
 </RelativeLayout>
